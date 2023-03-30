@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            background: red;
+            border-radius: 50%;
+
+           display: inline-block;
+           color: aquamarine;
+           cursor: pointer;
+           font-size: 100px;
+           font-weight: 900;
+           letter-spacing: 20px;
+           padding: 1em 3em 4em;
+           position: relative;
+           text-decoration: none;
+           text-transform: capitalize;
+           vertical-align: top;
+           margin-top:100px;
+           animation:bouncing  .5s ease 0s infinite alternate both;
+
+        }
+        @keyframes bouncing {
+        0%{
+            bottom: 0;
+            box-shadow: 0 0 5px rgba(red, green, blue, .5);        
+
+        }
+           100%{
+            bottom: 50px;
+            box-shadow: 0 50px 60px rgba(rgb(255, 242, 0), rgb(58, 44, 88), rgba(0, 221, 255, 0.216), .5) ;
+
+ 
+           } 
+        }
+    </style>
+</head>
+<body>
+    <a> hello world!!!!!</a>
+</body>
+</html>

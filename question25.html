@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    
+</head>
+<body>
+    <h1>Form Validation</h1>
+    <form onsubmit="return validate()" action="p1.html" >
+        <input type="text" id = "f" placeholder = "Enter first name" ><br>
+        <input type="text" id = "l" placeholder = "Enter last name"><br>
+        <input type="text" id = "u" placeholder = "Enter userId"><br>
+        <input type="text" id = "ad" placeholder = "Enter address"><br>
+        <input type="text" id = "e" placeholder = "Enter email address"><br>
+        <input type="text" id = "p" placeholder = "Enter password"><br>
+        <input type="text" id = "cp" placeholder = "Confirm password"><br>
+        <button type = "submit" >Submit</button>
+    </form>
+    <script>
+        function validate(){
+            var fname = document.getElementById('f').value;
+            var lname = document.getElementById('l').value;
+            var p1 = /^[A-Z a-z]{2,}$/i;
+            if(p1.test(fname) == false || p1.test(lname) == false){
+                alert("Invalid First or last name");
+                return false;
+            }
+            
+            var uid = document.getElementById('u').value;
+            var p2 = /^[a-z A-Z 0-9]+$/;
+            if(p2.test(uid) == false){
+                document.getElementById('u').style.backgroundColor = "red";
+                return false;
+            }
+
+            var add = document.getElementById('ad').value;
+            var p4 = /^[a-z A-Z 0-9 !@#/$%^&*]{1,}$/;
+            if(p4.test(add) == false){
+                alert("Address is empty!");
+                return false;
+            }
+           
+            var eid = document.getElementById('e').value;
+            var p5 = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if(p5.test(eid)==false){
+                alert("Enter valid email id");
+                return false;
+            }
+
+            var pw = document.getElementById('p').value;
+            var p6 = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{2,15}$/;
+            if(p6.test(pw)==false){
+                alert("Enter valid password");
+                return false;
+            }
+
+            var cpw = document.getElementById('cp').value;
+            if(!pw.match(cpw)){
+                alert("Password not confirmed");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

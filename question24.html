@@ -1,0 +1,60 @@
+<html>
+    <head>
+        
+    </head>
+    <body>  
+        <form id="temp" method="get">  
+          <div >   
+                <input type="number" name="input" required />
+                <select name=inOp >
+                    <option value=K>Kelvin</option>
+                    <option value=F>Fahrenheit</option>
+                    <option value=C>Celsius</option>
+                </select>
+                <input type="number" name="output"/>
+                <select name=outOp>
+                    <option value=K>Kelvin</option>
+                    <option value=F>Fahrenheit</option>
+                    <option value=C>Celsius</option>
+                </select>    
+                <br>
+          </div>   
+        </form>  
+        <button onclick="convert()">Convert</button>
+        <script>
+            function convert(){
+                input=document.forms[0].elements[0].value;
+                inOP=document.forms[0].elements[1].value;
+
+                outOP=document.forms[0].elements[3].value;
+                if(inOP=='C' && outOP=='K'){
+                    res=parseFloat(input)+273;
+                }
+
+                else if(inOP=='K' && outOP=='C'){
+                    res=parseFloat(input)-273;
+                    
+                }
+
+                else if(inOP=='F' && outOP=='K'){
+                    res=(parseFloat(input)-32)*(5/9)+273;
+                    
+                }
+
+                else if(inOP=='K' && outOP=='F'){
+                    res=(parseFloat(input)-273)*(9/5)+32;
+                }
+
+                else if(inOP=='F' && outOP=='C'){
+                    res=(parseFloat(input)-32)*(5/9);
+                }
+
+                else if(inOP=='C' && outOP=='F'){
+                    res=(parseFloat(input))*(9/5)+32;
+                }
+                document.forms[0].elements[2].value=res;
+                
+            }
+        </script>
+    </body>  
+</html>

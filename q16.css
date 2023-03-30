@@ -1,0 +1,57 @@
+/*Create a webpage that displays your favourite quotations in a web page just above images. 
+You have to use border, height, width, margin, padding, outline properties of CSS. Also use 
+text and font properties to add effects in text to display quotations.*/
+
+
+body{
+background-image:url('images/35.jpg');
+}
+.cont{
+            border: 10px;; 
+            border-style: dashed;
+            width: 800px;
+            height: 300px;
+            border-color: rgb(9, 8, 9);
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: flex-start;
+            justify-content: space-evenly;
+}
+
+
+.a{
+    
+    height: 150px;
+    width: 150px
+
+   
+
+}
+
+.b{
+    
+    height: 150px;
+    width: 150px;
+    color: aquamarine;
+    font-family: cursive;
+    border: 5px;
+}
+/*
+
+.con{
+    border: 10px;; 
+    border-style: inset;
+    width: 95%;
+    height: 100%;
+    border-color: rgb(141, 115, 147);
+    border-bottom: cornflowerblue;
+    flex-flow: row wrap;
+    display: flex;
+    flex-direction: row;
+}
+.d{
+    height: 150px;
+    width: 150px
+   border: 5px;
+}*/

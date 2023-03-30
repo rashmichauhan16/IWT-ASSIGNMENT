@@ -1,0 +1,158 @@
+table{
+    align-items: center;
+    margin-left: 6cm;
+    background-color: darkseagreen;
+}
+pre{
+   font-size: 1em;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+
+}
+.project{
+    font-size: medium;
+    color: black;
+    font-style: italic;
+    font-family: cursive;
+    
+}
+.img2
+        {
+            height: 100%;
+            width: 100%;
+
+        }
+        .one >img{
+            
+            height: 50px;
+            width: 50px;
+            padding: 20px;
+            margin: 10px;
+    
+           
+            
+        }
+        .con{
+           
+         
+            height: 500px;
+            width:1200px;
+            border: .3cm;
+            border-style: solid;
+            
+            justify-content: space-evenly;
+            align-items: center;
+        } 
+        .ras {               
+            float: left;
+            height: 400px;
+            width: 900px;
+            position:relative;
+            top:2%;
+            display: block;
+            margin: 5px;
+            padding: 10px 10px 10px 8px;
+            border: solid rgba(2, 67, 35, 0.41) 10px;
+            background-color: rgb(159, 166, 97);
+            border-radius: 3px;
+            font-style: italic;
+            line-height: 1.5cm;
+            font-weight: 900;
+            margin-left: 3.8cm;
+            font-size: 20px;
+        }
+        .img1
+        {
+            border: 1px;
+            border-radius: 3px;
+            border-style: solid;
+            border-color: aliceblue;
+            display: block;
+            margin-left: 15px;
+            float: left;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+
+
+        }
+        #con{
+            background-color: rgb(0, 0, 0);
+            }
+            #first{
+                background-image: linear-gradient(to left,rgb(90, 102, 183),rgba(10, 119, 227, 0.6),rgb(18, 198, 24),rgb(231, 50, 50),rgb(255, 128, 0),rgba(216, 15, 15, 0.52), rgba(35, 99, 126, 0.73)),
+                url('images/18.jpg') ;
+                height: 500px;
+                width: 1300px;
+                }
+                #second{
+                background-image: linear-gradient(to left,rgb(90, 183, 137),rgba(54, 111, 168, 0.6),pink,rgb(189, 78, 189),cyan,rgba(76, 91, 172, 0.52), rgba(35, 99, 126, 0.73)),
+                url('images/57.jpg') ;
+                }
+                #third{
+                background-image: linear-gradient(to left,rgb(22, 209, 116),rgba(52, 84, 116, 0.6),rgb(176, 90, 105),rgb(198, 37, 198),rgb(229, 255, 0),rgba(34, 57, 188, 0.52), rgba(9, 148, 208, 0.73)),
+                url('images/35.jpg') ;
+                }
+                #fourth{
+                    background-color: palevioletred;
+                }
+                .manubar{
+                    background-color: black;
+                    color: rgb(236, 227, 227);
+                     margin-top: 0cm;
+                    padding: 0px;
+                    background-color: rgb(31, 121, 40);
+                    padding: 3px 10px 10px 8px;
+                    height: 40px;
+            
+            
+            
+            
+                }
+               div> ul li{
+                        float: left;
+                        border: .1;
+                        border-color: cornflowerblue;
+                        margin: -15px;
+                        height:.3cm;
+                        display: block;
+                        padding: 3px 10px 10px 8px;
+                        background-color: rgb(31, 121, 40);
+                        
+                        margin-left: 50px;
+                        margin-right: 30px;
+                        font-size: larger;
+                        font-weight: 900;
+                        color: rgba(254, 251, 251, 0.911);
+                        padding-top: .5cm;
+               }
+               .container{
+                background-color: aquamarine;
+                border: 2px;
+                border-radius: .2cm;
+                padding-top: .4cm;
+            
+            
+               }
+               .a{
+                border: 4px;
+                display: grid;
+                padding: .3cm;
+                margin: 10px;
+                border-color: rgb(229, 226, 226);
+                border-radius: .2cm;
+                padding-top: .4cm;
+                border-style: solid;
+                height: auto;
+                width: auto;
+                display: flex;
+                flex-direction: row;
+                
+            
+               }
+               h3{
+            color: white;
+            text-align: center;
+               }
+               

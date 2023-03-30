@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question9</title>
+</head>
+<body bgcolor="lightblue">
+    <!--9.Create a user feedback page which asks questions about a software product.
+     You are required to use checkbox, radio buttons, and drop-down, textarea and various
+     text input type for this. Structure the web page using HTML table.-->
+     <form>
+     <table border="5"  cellspacing="5"cellpadding="4">
+        <th colspan="2" bgcolor="lightgreen">
+            FEEDBACK FORM
+        </th>
+        <tr>
+            <td ><label><b>custumer's name:</b></label>
+            </td>
+            <td><input type="text" placeholder="enter your name"</td>
+        </tr>
+        <tr>
+            <td><b>Gender:</b></td>
+            <td>
+                <input type="radio" value="female" name="gen">Female
+                <input type="radio" value="male" name="gen">Male
+                <input type="radio" value="Other" name="gen">Other
+
+            </td>
+        </tr><tr>
+        <td><b>which software product purches:</b></td>
+        <td>
+            <select for="software" >
+                <option  value="MS word">MS word</option>
+                <option value="MS power point" >MS power point</option>
+                <option value="execl">execl</option>
+                <option value="nortan security">nortan security</option>
+            </select>
+        </td>
+        </tr>
+        <tr>
+        <td><b>feedback:</b></td>
+        <td><textarea name="feedback" placeholder="please give your feedback"
+            rows="5" cols="42"></textarea></td>
+</tr>
+<tr>
+    <td><b>Features of the product:</b></td>
+    <td><input type="checkbox" value="fast" name="f">Features
+        <input type="checkbox" value="cost" name="f">Cost
+        <input type="checkbox" value="efficient" name="f">efficient
+        <input type="checkbox" value="responsiveness" name="f">Responsiveness
+    
+
+    </td>
+</tr><tr>
+    <td  ><b>Rating:</b></td>
+    <td>
+        <input type="radio"  name="f">*
+        <input type="radio"  name="f">**
+        <input type="radio"  name="f">***
+        <input type="radio"  name="f">****
+        <input type="radio"  n ame="f">*****
+    </td>
+</tr>
+<th bgcolor="black" colspan="2">
+    <input type="reset" value="Reset"/>
+    <input type="submit" value="Submit"/>
+</th>
+</table>
+    </form>
+</body>
+</html>

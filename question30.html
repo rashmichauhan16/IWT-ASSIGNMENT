@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+	<title>Guess the Number!</title>
+    <style>
+        body{
+            background-color: lightblue;
+            font-size: medium;
+            font-weight: 600;
+        }
+        div {
+          width: 300px;
+          border: 15px solid rgb(41, 78, 7);
+          padding: 50px;
+          margin: 20px;
+          border-radius: 10px;
+           
+}
+button {
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+    </style>
+		
+	</head>
+		<body >
+		  <h2>GUESS  NUMBER BETWEEN 1 & 1000  </h2>
+		  <hr color="black" width="100%" SIZE =5 ALIGN="CENTRE">
+		  <div id="histogram">
+			<label for="playerNumber" accesskey="n">Type a number</label> <input type="number" id="playerNumber" value="" size="10"><br/><br>
+			<button onclick="guess()"> My Guess</button>
+		  </div>
+          <script type="text/javascript">
+            var number = generateValue();
+            
+            function generateValue(){
+              return Math.floor(1000*Math.random())+1;
+            }
+            
+            function guess()
+          {
+              if (document.getElementById("playerNumber").value == undefined || document.getElementById("playerNumber").value.trim() == "" || isNaN(document.getElementById("playerNumber").value))
+              {
+                alert("Please Enter a number");
+                document.getElementById("playerNumber").focus();
+                return false;
+              }
+              if (parseInt(document.getElementById("playerNumber").value) > number)
+              {
+                alert("Too high\n\nTry again.");
+              }else if (parseInt(document.getElementById("playerNumber").value) < number)
+              {
+                alert("Too low\n\nTry again.");
+              }else
+              {
+                alert("Congratulations!!\n\nYou guessed the number.");
+                number = generateValue();
+              }
+              document.getElementById("playerNumber").value = "";
+              document.getElementById("playerNumber").focus();
+          }
+          </script>
+		</body>
+</html>

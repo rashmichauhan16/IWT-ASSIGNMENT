@@ -1,0 +1,133 @@
+<!--  
+Make a layout template that contains a header and two paragraphs. Use float to line up the 
+two paragraphs as columns side by side. Give the header and two paragraphs a border 
+and/or a background color so you can see where they are-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            margin: 10px;
+            padding: 8px;
+            background-image: url("images/37.jpg");
+            background-repeat: no-repeat;
+        }
+    H2{
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       font-style: oblique;
+       text-shadow: 2px 2px 8px black;
+       text-decoration: underline;
+      
+    }
+    h1{
+        border-radius: .7cm;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       font-style: oblique;
+       text-shadow: 2px 2px 8px black;
+       text-decoration: underline;
+    }
+        .row{
+            border: 1px solid maroon;
+            padding: 10px;
+            background: rgba(66, 121, 66, 0.704);
+            margin: 15px;
+        }
+
+        .column1{               
+            float: left;
+            width: 40%;
+            position: absolute;
+            top: 20%;
+            left: 5%;
+            display: block;
+            margin: 10px;
+            padding: 10px 10px 10px 8px;
+            border: solid rgba(24, 114, 71, 0.41) 10px;
+            background-color: rgb(159, 166, 97);
+            box-shadow: 10px 10px 10px rgb(150, 65, 65);
+            font-style: italic;
+            line-height: 1cm;
+            font-weight: 900;
+        }
+
+        .column2{               
+            float: left;
+            width: 40%;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            display: block;
+            margin: 10px;
+            padding: 10px 10px 10px 8px;
+            border: solid rgb(111, 61, 104) 15px;
+            background-color: rgb(45, 107, 208);
+            box-shadow: 10px 10px 10px rgb(179, 50, 50);
+            line-height: .4cm;
+            font-style: italic;
+            font-weight: 900;
+            font-size: .3;
+        }
+
+        .img1{
+            display: block;
+            margin-left: 10px;
+            float: right;
+            height: 100px;
+        }
+
+        .img2{
+            display: block;
+            margin-left: 15px;
+            float: right;
+            height: 100px;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div class="row">
+        <h1>Css properties & News</h1>
+        <br>
+        <br>
+        <div class="column1">
+           <h2>How floated element positioned</h2>
+            when an element is floated, it is taken out of the normal flow of the document (though still remaining part of it). It is shifted to the left, or right, until it touches the edge of its containing box, or another floated element.
+
+            In this example, there are three colored squares. Two are floated left,<img class ="img1" src = "images/52.jpg" /> and one is floated right. Note that the second "left" square is placed to the right of the first. Additional squares would continue to stack to the right, until they filled the containing box, after which they would wrap to the next line.
+            
+            A floated element is at least as tall as its tallest nested floated children. We gave the parent width: 100% and floated it to ensure it is tall enough to encompass its floated children, and to make sure it takes up the width of the parent so we don't have to clear its adjacent sibling.
+            
+        </div>
+        <div class="column2">
+            <h2>Reliance, Aditya Birla Group, Tata to invest more than Rs 1 lakh crore in Uttar Pradesh</h2>
+            <img class ="img2" src = "images/51.jpg" />
+            India's leading conglomerates Reliance, Aditya Birla Group and Tata on Friday committed to invest more than Rs 1 lakh crore in Uttar Pradesh to expand their businesses in the near future. Reliance Industries will invest Rs 75,000 crore in rolling out 5G mobile telephony services, expanding retail network and setting up renewable energy capacity over the next four years, its Chairman Mukesh Ambani announced at the UP Global Investors Summit.
+
+            Similarly, Aditya Birla Group Chairman Kumar Mangalam Birla said his group has committed Rs 25,000 crore investment across its various businesses such as cement, metals, chemicals, financial services and renewable energy in the state.
+            
+            Tata Sons Chairman N Chandrasekaran said group firm Air India SATS will set up an integrated multi-modal cargo hub at the upcoming Jewar airport in partnership with Zurich Airport.
+            
+            In his address at the event, Ambani also announced foray of the oil-to-telecom conglomerate into bio-energy business, converting agriculture waste into gas which can be used as fuel in industries, run automobiles or light kitchen stoves.
+            
+            His group will set up 10 GigaWatts of renewable energy capacity and roll out 5G services across the state in the next 10 months.
+            
+            "We plan to invest an additional Rs 75,000 crore in UP over the next four years across Jio, retail, and renewable businesses," he said.
+            
+            "These new investments will create an additional over 1 lakh jobs in the state," Ambani said, adding the investment will be in addition to Rs 50,000 crore already invested in the state.
+            
+            Reliance Jio, the nation's largest telecom company by subscribers, will complete its rollout of 5G to cover every town and village in the state by December 2023.
+            
+            Stating that this will help modernise all areas of business and industry, agriculture, social sector, and governance, he said the company plans to do pilots on its two new innovative initiatives -- Jio School and Jio AI Doctor -- to bring top-class education and healthcare in the most affordable way to villages and small towns across Uttar Pradesh.
+            
+            Birla, in his address said,"as an early investor in the industrial journey of the state, we feel enthused by the rapid progress that the state is making."
+        </div>
+    </div>
+</body>>
+</html>

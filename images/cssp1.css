@@ -1,0 +1,30 @@
+
+p{
+    color: red;
+}
+h1{
+    color: yellowgreen;
+
+}
+
+li{
+    list-style-type: none;
+}
+.a{
+    color: blueviolet;
+    font-size: larger;
+    font-style:unset; 
+    
+}
+body h1+p .a{
+    color: purple;
+    background-color: aqua;
+    padding: 30%;
+    font-size: x-large;
+}
+#aa{
+    background-color: brown ;
+    font-style: italic;
+    font-weight: 900;
+    font-size: large;
+}

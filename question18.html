@@ -1,0 +1,64 @@
+<!--Create an infinite animation of an element moving in a square pattern.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            display: flex;
+            flex-direction: row;
+           background-color: rgb(20, 19, 22);
+           justify-content: center;
+           height: 900px;
+           width:1200px;
+           border: .3cm;
+           border-style: solid;
+           border-color: brown;
+           justify-content: space-evenly;
+           
+        }
+        
+        .one >img{
+            
+                        height: 150px;
+                        width: 150px;
+        }
+        .one{
+            width: 100px;
+            height: 100px;
+            position:relative;
+            animation-name: rashmi;
+           
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            
+            animation-timing-function: ease-in;
+
+        }
+        
+        
+        @keyframes rashmi{
+            0%   { left:0px; top:0px;}
+            25%  { left:200px; top:0px;}
+            50%  {left:200px; top:200px;}
+            75%  { left:0px; top:200px;}
+           100%  { left:0px; top:0px;}
+            ;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    
+    <div class="con">
+    <div class="one">
+        <img src="images/41.jpg"/>
+    </div>
+    
+    </div>
+</body>
+</html>
